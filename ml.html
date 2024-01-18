@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Modern Business - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/ml.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/92ef3b2675.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="img/pixelcut-export (2).png">
+    </head>
+    <body class="d-flex flex-column" >
+        <main class="flex-shrink-0">
+            <!-- Header-->
+            <header class="py-5 bg-warning bg-gradient">
+                <div class="container px-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-xxl-6" >
+                            <div class="text-center my-5" >
+                                <h1 class="fw-bolder mb-3" style="color: rgb(0, 0, 0);">MOTHERS LAP</h1>
+                                <p class="lead fw-normal text-dark mb-4">This project basically made by using FRONT END languages.This is a college level projects. The three teammates made it's successfull. The front end of a website 
+                                    is everything the user either sees or interacts with when they visit the website. It is 
+                                    responsible for the total look and feel of an online experience. While the term may sound 
+                                    a little technical, website front ends are really an everyday encounter for almost all of us. 
+                                </p>
+                                <a class="btn btn-dark btn-lg" href="https://sayanroy20042002.github.io/MOTHER-S_LAP/index.html" target="_blank">SEE THIS PROJECT</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- js portion one-->
+            <section class="py-5 bg-light" id="scroll-target">
+                <div class="container px-5 my-5">
+                    <h1 class="fw-bolder mb-3" style="color: rgb(0, 0, 0); text-align: center;"> Some Important JS Which Are Used In This Project</h1> <br> <br>
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="img/counterml.png" alt="..."/></div>
+                        <div class="col-lg-6">
+                            <h2 class="fw-bolder" style="color: rgb(255, 174, 0);">js counter</h2>
+                            <p class="lead fw-normal  mb-0 text-dark" style="font-size: smaller; font-family: monospace;">const counters = document.querySelectorAll('.value');<br>
+                                const speed = 200;<br>
+                                
+                                counters.forEach( counter => {<br>
+                                   const animate = () => {<br>
+                                      const value = +counter.getAttribute('akhi');<br>
+                                      const data = +counter.innerText;<br>
+                                     
+                                      const time = value / speed;<br>
+                                     if(data < value) {<br>
+                                          counter.innerText = Math.ceil(data + time);<br>
+                                          setTimeout(animate, 1);<br>
+                                        }else{<br>
+                                          counter.innerText = value;<br>
+                                        }<br>
+                                     
+                                   }<br>
+                                   
+                                   animate();<br>
+                                });<br>
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- js portion two-->
+            <section class="py-5 bg-warning bg-gradient">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="img/popzoom.png" alt="..." /></div>
+                        <div class="col-lg-6">
+                            <h2 class="fw-bolder" style="color: #000000;">JS image Popup with Zoom</h2>
+                            <p class="lead fw-normal text-muted mb-0 text-dark" style="font-size: smaller; font-family: monospace;"">
+                                
+                                    // Get the modal <br>
+                                    var modal = document.getElementById('myModal');<br>
+                                     
+                                    // Get the image and insert it inside the modal - use its "alt" text as a caption<br>
+                                    var img = document.getElementById('myImg');<br>
+                                    var modalImg = document.getElementById("img01");<br>
+                                    var captionText = document.getElementById("caption");<br>
+                                    img.onclick = function(){<br>
+                                        modal.style.display = "block";<br>
+                                        modalImg.src = this.src;<br>
+                                        modalImg.alt = this.alt;<br>
+                                        captionText.innerHTML = this.alt;<br>
+                                    }
+                                     
+                                     
+                                    // When the user clicks on span (x), close the modal<br>
+                                    modal.onclick = function() {<br>
+                                        img01.className += " out";<br>
+                                        setTimeout(function() {<br>
+                                           modal.style.display = "none";<br>
+                                           img01.className = "modal-content";<br>
+                                         }, 400);<br>
+                                        
+                                     }  <br>  
+                                        
+                                    
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- js portion 3 -->
+            <section class="py-5 bg-light" id="scroll-target">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="img/nav.png" alt="..."/></div>
+                        <div class="col-lg-6">
+                            <h2 class="fw-bolder" style="color: rgb(255, 174, 0);">js Collapsable navbar(Menubar)</h2>
+                            <p class="lead fw-normal  mb-0 text-dark" style="font-size: smaller; font-family: monospace;">
+                                function classToggle() { <br>
+                                    const navs = document.querySelectorAll('.Navbar__Items')<br>
+                                    
+                                    navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));<br>
+                                  }
+                                  
+                                  document.querySelector('.Navbar__Link-toggle')<br>
+                                    .addEventListener('click', classToggle);<br>
+                                      </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team members section-->
+            <section class="py-5 bg-warning bg-gradient">
+                <div class="container px-5 my-5">
+                    <div class="text-center">
+                        <h2 class="fw-bolder text-dark">My Teammates</h2>
+                        <p class="lead fw-normal text-muted mb-5"> Without whom it would not have been possible in short time. thank you for using your experience in this way in this project.</p>
+                    </div>
+                    <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-5 mb-5 mb-xl-0">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="img/pixelcut-export (2).png" alt="..." />
+                                <h5 class="fw-bolder">Sayan Roy</h5>
+                                <div class="fst-italic text-muted">B.Tech in ECE,Full Stack Developer</div>
+                                <div class="fst-italic text-muted">MAJORITY IMPACT IN HTML,BOOTSTRAP & </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5 mb-5 mb-xl-0">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="img/ANK.png" alt="..." />
+                                <h5 class="fw-bolder">Ankita Karmakar</h5>
+                                <div class="fst-italic text-muted">B.Tech in ECE,Full Stack Developer</div>
+                                <div class="fst-italic text-muted">MAJORITY IMPACT IN CSS & SCSS </div>
+                            </div>
+                        </div>
+                        <div class="col mb-5 mb-5 mb-sm-0">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="img/SOU.png" alt="..." />
+                                <h5 class="fw-bolder">Souvik Das</h5>
+                                <div class="fst-italic text-muted">Diploma,B.Tech in ECE,Full Stack Developer</div>
+                                <div class="fst-italic text-muted">MAJORITY IMPACT IN JS </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- sidenav -->
+        <div id="mySidenav" class="sidenav">
+            <a href="index.html" id="about">Home</a>
+            <a href="dc.html" id="blog"> Digital Clock</a>
+            <a href="se.html" id="projects">Search Engine</a>
+            <a href="kn.html" id="contact">Know Me</a>
+          </div>
+
+          <!-- see project  -->
+          <div class="icon-bar">
+            <a href="https://sayanroy20042002.github.io/MOTHER-S_LAP/index.html" class="facebook"> see  <br> project <br><i class="fa-solid fa-eye"></i></a>
+            </div>
+          
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">2024@All rights Reserved to Sayan Roy.</div></div>
+                    
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

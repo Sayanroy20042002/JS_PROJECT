@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS project by SAYAN </title>
+    <link rel="stylesheet" href="css/dc.css">
+    <link rel="icon" type="image/x-icon" href="img/pixelcut-export (2).png">
+   
+
+</head>
+
+<body>
+  
+
+     <!-- html portion -->
+  
+    <div class="hero">
+        <br><br>
+    <h1 style="font-size:3vw; color: #b8fff9; font-family:'poppins',sans-serif;  margin: 60px; padding: 0; text-align: center;">DIGITAL CLOCK USING HTML,CSS & JAVASCRIPT</h1> 
+    
+        <div class="container">
+            <div class="clock">
+                <span id="HRS">00</span>
+                <span>:</span>
+                <span id="MIN">00</span>
+                <span>:</span>
+                <span id="SEC">00</span>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="index.html" id="about">Home</a>
+        <a href="se.html" id="blog">Search Engine</a>
+        <a href="ml.html" id="projects">Mothers Lap</a>
+        <a href="kn.html" id="contact">Know Me</a>
+      </div>
+    </body>
+
+    <!-- js portion -->
+    <script>
+        let hrs = document.getElementById("HRS");
+        let min = document.getElementById("MIN");
+        let sec = document.getElementById("SEC");
+        setInterval(() => {
+            let currentTime = new Date();
+            hrs.innerHTML = (currentTime.getHours() < 10 ? "0" : " ") + currentTime.getHours();
+            min.innerHTML = (currentTime.getMinutes() < 10 ? "0" : " ") + currentTime.getMinutes();
+            sec.innerHTML = (currentTime.getSeconds() < 10 ? "0" : " ") + currentTime.getSeconds();
+        }, 1000);
+    </script>
+</body>
+
